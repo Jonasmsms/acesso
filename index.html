@@ -114,8 +114,8 @@ body::after{
 }
 .role::before,.role::after{content:'';width:14px;height:1px;background:var(--red);opacity:.6}
 .bio{
-  font-size:.92rem;color:var(--mid);text-align:center;
-  line-height:1.65;margin-bottom:28px;max-width:340px;
+  font-size:.96rem;color:#9898A8;text-align:center;
+  line-height:1.7;margin-bottom:28px;max-width:340px;
 }
 .bio b{color:var(--white);font-weight:500}
 
@@ -124,11 +124,10 @@ body::after{
 
 /* ── PERGUNTA DIRETORA ── */
 .question{
-  font-family:'Orbitron',sans-serif;font-weight:700;
-  font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--mid);text-align:center;margin-bottom:16px;
+  font-family:'Orbitron',sans-serif;font-weight:900;
+  font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--white);text-align:center;margin-bottom:20px;
 }
-.question span{color:var(--white)}
 
 /* ── BOTÕES ── */
 .links{width:100%;display:flex;flex-direction:column;gap:10px}
@@ -138,54 +137,55 @@ body::after{
   width:100%;
   text-decoration:none;color:var(--white);
   position:relative;overflow:hidden;
-  background:var(--card);
-  border:1px solid rgba(255,255,255,.06);
+  background:#14141C;
+  border:1px solid rgba(255,255,255,.1);
   transition:transform .18s,border-color .2s,background .2s;
   cursor:pointer;
 }
 .link-btn:hover{
   transform:translateX(5px);
-  border-color:var(--lr);
-  background:rgba(232,0,26,.04);
+  border-color:rgba(232,0,26,.5);
+  background:rgba(232,0,26,.06);
 }
 
 /* Linha vermelha forte na esquerda */
 .link-line{
-  width:4px;height:100%;
-  background:linear-gradient(to bottom,var(--red),var(--red2));
+  width:5px;height:100%;
+  background:var(--red);
   flex-shrink:0;
-  box-shadow:2px 0 12px rgba(232,0,26,.5);
+  box-shadow:0 0 14px rgba(232,0,26,.8),0 0 28px rgba(232,0,26,.3);
 }
 
 .link-content{
-  flex:1;padding:18px 16px;display:flex;align-items:center;gap:14px;
+  flex:1;padding:20px 18px;display:flex;align-items:center;gap:16px;
 }
 
 /* Número / index */
 .link-num{
   font-family:'Orbitron',sans-serif;font-weight:900;
   font-size:1.4rem;letter-spacing:.02em;
-  color:rgba(232,0,26,.25);flex-shrink:0;width:28px;
+  color:rgba(232,0,26,.7);flex-shrink:0;width:28px;
   line-height:1;
+  text-shadow:0 0 10px rgba(232,0,26,.5);
 }
-.link-btn:hover .link-num{color:rgba(232,0,26,.5)}
+.link-btn:hover .link-num{color:var(--red);text-shadow:0 0 16px rgba(232,0,26,.8)}
 
 .link-text{flex:1}
 .link-title{
-  font-family:'Orbitron',sans-serif;font-weight:700;
-  font-size:.82rem;letter-spacing:.05em;text-transform:uppercase;
-  color:var(--white);display:block;margin-bottom:3px;
+  font-family:'Orbitron',sans-serif;font-weight:900;
+  font-size:.95rem;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--white);display:block;margin-bottom:4px;
   transition:color .2s;
 }
 .link-btn:hover .link-title{color:var(--red)}
-.link-sub{font-size:.8rem;color:var(--mid);font-weight:300;line-height:1.4;display:block}
+.link-sub{font-size:.88rem;color:#A0A0B0;font-weight:400;line-height:1.4;display:block}
 
 .link-arrow{
-  font-size:.65rem;color:var(--dim);flex-shrink:0;
-  padding-right:16px;
+  font-size:.75rem;color:rgba(232,0,26,.5);flex-shrink:0;
+  padding-right:18px;
   transition:color .2s,transform .2s;
 }
-.link-btn:hover .link-arrow{color:var(--red);transform:translateX(3px)}
+.link-btn:hover .link-arrow{color:var(--red);transform:translateX(4px)}
 
 /* Tag no botão de destaque */
 .link-tag{
@@ -223,7 +223,7 @@ body::after{
 
   <div class="div"></div>
 
-  <div class="question"><span>Onde você está agora?</span></div>
+  <div class="question">Onde você está agora?</div>
 
   <!-- Links -->
   <div class="links">
