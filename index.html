@@ -180,19 +180,17 @@ body::after{
 .link-btn:hover .link-title{color:var(--red)}
 .link-sub{font-size:1rem;color:#A0A0B0;font-weight:400;line-height:1.4;display:block}
 
-.link-arrow{
-  font-size:1.1rem;
-  color:var(--red);
-  flex-shrink:0;
-  padding-right:18px;
-  text-shadow:0 0 8px rgba(232,0,26,.8),0 0 20px rgba(232,0,26,.4);
-  animation:arrowPulse 1.6s ease-in-out infinite;
-  transition:transform .2s;
+.link-arrow-wrap{
+  flex-shrink:0;padding-right:16px;
 }
-.link-btn:hover .link-arrow{transform:translateX(5px)}
+.arrow-svg{
+  display:block;
+  animation:arrowPulse 1.6s ease-in-out infinite;
+}
+.link-btn:hover .arrow-svg{filter:drop-shadow(0 0 14px rgba(232,0,26,1))}
 @keyframes arrowPulse{
-  0%,100%{text-shadow:0 0 6px rgba(232,0,26,.6),0 0 14px rgba(232,0,26,.3);opacity:1}
-  50%{text-shadow:0 0 14px rgba(232,0,26,1),0 0 28px rgba(232,0,26,.6);opacity:.7}
+  0%,100%{filter:drop-shadow(0 0 4px rgba(232,0,26,.6));transform:scale(1)}
+  50%{filter:drop-shadow(0 0 12px rgba(232,0,26,1));transform:scale(1.12)}
 }
 
 /* Tag no botão de destaque */
@@ -256,7 +254,12 @@ body::after{
           <span class="link-title">Raio X do Delivery</span>
           <span class="link-sub">Descubra o que está travando seu crescimento</span>
         </div>
-        <span class="link-arrow">▶</span>
+        <div class="link-arrow-wrap">
+        <svg class="arrow-svg" width="36" height="36" viewBox="0 0 36 36">
+          <circle cx="18" cy="18" r="16" fill="rgba(232,0,26,.15)" stroke="#E8001A" stroke-width="1.5"/>
+          <polygon points="14,11 27,18 14,25" fill="#E8001A"/>
+        </svg>
+      </div>
       </div>
     </a>
 
@@ -269,7 +272,11 @@ body::after{
           <span class="link-title">Curso Completo</span>
           <span class="link-sub">Tráfego pago para delivery do zero à escala</span>
         </div>
-        <span class="link-arrow">▶</span>
+        <div class="link-arrow-wrap">
+        <svg class="arrow-svg" width="36" height="36" viewBox="0 0 36 36">
+          <circle cx="18" cy="18" r="16" fill="rgba(232,0,26,.15)" stroke="#E8001A" stroke-width="1.5"/>
+          <polygon points="14,11 27,18 14,25" fill="#E8001A"/>
+        </svg>
       </div>
       <div class="link-tag">NOVO</div>
     </a>
@@ -283,7 +290,12 @@ body::after{
           <span class="link-title">Falar com Jonas</span>
           <span class="link-sub">Tire sua dúvida diretamente pelo WhatsApp</span>
         </div>
-        <span class="link-arrow">▶</span>
+        <div class="link-arrow-wrap">
+        <svg class="arrow-svg" width="36" height="36" viewBox="0 0 36 36">
+          <circle cx="18" cy="18" r="16" fill="rgba(232,0,26,.15)" stroke="#E8001A" stroke-width="1.5"/>
+          <polygon points="14,11 27,18 14,25" fill="#E8001A"/>
+        </svg>
+      </div>
       </div>
     </a>
 
